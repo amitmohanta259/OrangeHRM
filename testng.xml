@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-  <test name="Test">
+  
+  <test name="Launch And Navigate">
     <classes>
-      <class name="Automation.OrangeHRM.test1111"/>
+      <class name="Automation.OrangeHRM.LaunchBrowser"/>
     </classes>
   </test> <!-- Test -->
+  
+  <test name="Login">
+    <classes>
+      <class name="Automation.OrangeHRM.Admin.Login"/>
+    </classes>
+  </test>
 </suite> <!-- Suite -->
