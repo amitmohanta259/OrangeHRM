@@ -12,5 +12,7 @@
     <classes>
       <class name="Automation.OrangeHRM.Admin.Login"/>
     </classes>
-  </test>
+  </test> <!-- Test -->
+  
+ 
 </suite> <!-- Suite -->

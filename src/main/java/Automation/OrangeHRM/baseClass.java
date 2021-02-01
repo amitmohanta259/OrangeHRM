@@ -20,7 +20,7 @@ public class baseClass {
 	public WebDriver initializeDriver() throws IOException{
 		//Access Browser folder
 		File browserFolder = new File("browser");
-		String chromeDriver = (new File(browserFolder, "chromedriver.exe")).getAbsolutePath();
+		String chromeDriver = (new File(browserFolder, "chromedriver1.exe")).getAbsolutePath();
 		String firefoxDriver = (new File(browserFolder, "geckodriver.exe")).getAbsolutePath();
 		String edgeDriver = (new File(browserFolder, "msedgedriver.exe")).getAbsolutePath(); 
 		String browserName = getProperties("browserName");
