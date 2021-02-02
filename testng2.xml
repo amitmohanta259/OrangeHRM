@@ -5,6 +5,8 @@
   <test name="Login">
     <classes>
       <class name="Automation.OrangeHRM.Login"/>
+      <class name="Automation.OrangeHRM.PimModule"/>
+      <class name="Automation.OrangeHRM.Logout"/>
     </classes>
   </test> <!-- Test -->
   
