@@ -7,13 +7,14 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
 
 public class Logout{
-//	@Test(priority=3)
-//	public void logOut(){
-//		WebDriverWait wait = new WebDriverWait(baseClass.driver,20);
-//		wait.until(ExpectedConditions.visibilityOfAllElements(baseClass.driver.findElement(By.xpath("//a[@id='welcome']"))));
-//		baseClass.driver.findElement(By.xpath("//a[@id='welcome']")).click();
-//		baseClass.driver.findElement(By.linkText("Logout")).click();
-//	}
+	
+	@Test(priority=3)
+	public void logOut(){
+		WebDriverWait wait = new WebDriverWait(baseClass.driver,20);
+		wait.until(ExpectedConditions.visibilityOfAllElements(baseClass.driver.findElement(By.xpath("//a[@id='welcome']"))));
+		baseClass.driver.findElement(By.xpath("//a[@id='welcome']")).click();
+		baseClass.driver.findElement(By.linkText("Logout")).click();
+	}
 	
 	@AfterTest()
 	public void close() throws InterruptedException{
