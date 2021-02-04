@@ -2,10 +2,15 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
   
+  <listeners>
+		<listener class-name="Automation.OrangeHRM.TestListener" />
+  </listeners>
+  
   <test name="Login">
     <classes>
       <class name="Automation.OrangeHRM.Login"/>
       <class name="Automation.OrangeHRM.PimModule"/>
+      <class name="Automation.OrangeHRM.AddEmployee"/>
       <class name="Automation.OrangeHRM.Logout"/>
     </classes>
   </test> <!-- Test -->

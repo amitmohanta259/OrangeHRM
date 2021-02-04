@@ -10,13 +10,14 @@
 	<name>OrangeHRM</name>
 	<url>http://maven.apache.org</url>
 
+
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
-
+	
 	<profiles>
 		<profile>
-			<id>End to End</id>
+			<id>Login</id>
 			<build>
 				<pluginManagement>
 					<plugins>
@@ -36,7 +37,7 @@
 		</profile>
 		
 		<profile>
-			<id>Login</id>
+			<id>End2End</id>
 			<build>
 				<pluginManagement>
 					<plugins>
