@@ -14,7 +14,7 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
-	
+
 	<profiles>
 		<profile>
 			<id>Login</id>
@@ -35,7 +35,7 @@
 				</pluginManagement>
 			</build>
 		</profile>
-		
+
 		<profile>
 			<id>End2End</id>
 			<build>
@@ -130,5 +130,12 @@
 			<version>3.8.1</version>
 			<scope>test</scope>
 		</dependency>
+
+		<dependency>
+			<groupId>com.aventstack</groupId>
+			<artifactId>extentreports</artifactId>
+			<version>3.1.5</version>
+		</dependency>
+
 	</dependencies>
 </project>

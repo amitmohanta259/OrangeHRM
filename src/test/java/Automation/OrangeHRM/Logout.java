@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 
 public class Logout{
 	
-	@Test(priority=5)
+	@Test(priority=1)
 	public void logOut(){
 		WebDriverWait wait = new WebDriverWait(baseClass.driver,20);
 		wait.until(ExpectedConditions.visibilityOfAllElements(baseClass.driver.findElement(By.xpath("//a[@id='welcome']"))));

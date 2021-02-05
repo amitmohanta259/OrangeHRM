@@ -10,7 +10,7 @@ public class AddEmployee {
 	AddEmployeePO addemployeePageObject;
 	String firstName,lastName,middleName;
 	
-	@Test(priority=5)
+	@Test(priority=1)
 	public void fillForm(){
 		addemployeePageObject = new AddEmployeePO(baseClass.driver);
 		System.out.println("Inside fillForm");
@@ -29,7 +29,7 @@ public class AddEmployee {
 		}
 	}
 	
-	@Test(priority=6)
+	@Test(priority=2)
 	public void verifyAddEmployee(){
 		String profileName = baseClass.driver.findElement(By.xpath("//div[@id='profile-pic']/h1")).getText();
 		String expectedProfileName = firstName+" "+middleName+" "+lastName;
