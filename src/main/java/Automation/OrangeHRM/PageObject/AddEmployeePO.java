@@ -38,6 +38,18 @@ public class AddEmployeePO {
 	@FindBy(xpath="//span[@class='validation-error']")
 	WebElement errorMsg;
 	
+	@FindBy(xpath="//input[@id='user_name']")
+	WebElement username;
+	
+	@FindBy(xpath="//input[@id='user_password']")
+	WebElement password;
+	
+	@FindBy(xpath="//input[@id='re_password']")
+	WebElement confirmPassword;
+	
+	@FindBy(xpath="//*[@id='status']")
+	WebElement status;
+	
 	
 	public WebElement head(){
 		return head;
@@ -69,6 +81,22 @@ public class AddEmployeePO {
 	
 	public WebElement saveBtn(){
 		return saveBtn;
+	}
+	
+	public WebElement username(){
+		return username;
+	}
+	
+	public WebElement password(){
+		return password;
+	}
+	
+	public WebElement confirmPassword(){
+		return confirmPassword;
+	}
+	
+	public WebElement status(){
+		return status;
 	}
 	
 	public WebElement errorMsg(){
