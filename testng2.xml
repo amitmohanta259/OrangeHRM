@@ -11,6 +11,7 @@
       <class name="Automation.OrangeHRM.Login"/>
       <class name="Automation.OrangeHRM.PimModule"/>
       <class name="Automation.OrangeHRM.AddEmployee"/>
+      <class name="Automation.OrangeHRM.EditPersonalDetails"/>
       <class name="Automation.OrangeHRM.Logout"/>
     </classes>
   </test> <!-- Test -->
