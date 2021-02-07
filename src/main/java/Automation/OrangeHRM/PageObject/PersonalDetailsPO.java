@@ -41,7 +41,7 @@ public class PersonalDetailsPO {
 	WebElement dobYear;
 	
 	@FindBy(xpath="//a[@class='ui-state-default']")
-	WebElement dobDate;
+	List<WebElement> dobDate;
 	
 	@FindBy(xpath="//input[@id='personal_optGender_1']")
 	WebElement male;
@@ -57,6 +57,12 @@ public class PersonalDetailsPO {
 	
 	@FindBy(xpath="//select[@class='editable'][@name='custom1']")
 	WebElement bloodGroup;
+	
+	@FindBy(xpath="//input[@id='btnEditCustom']")
+	WebElement editSaveCustom;
+	
+	@FindBy(xpath="//input[@id='btnAddAttachment']")
+	WebElement addSaveAttachment;
 	
 	public WebElement head(){
 		return head;
@@ -94,7 +100,7 @@ public class PersonalDetailsPO {
 		return dobYear;
 	}
 	
-	public WebElement dobDate(){
+	public List<WebElement> dobDate(){
 		return dobDate;
 	}
 	
@@ -117,5 +123,10 @@ public class PersonalDetailsPO {
 	public WebElement bloodGroup(){
 		return bloodGroup;
 	}
+	
+	public WebElement editSaveCustom(){
+		return editSaveCustom;
+	}
+	
 	
 }
