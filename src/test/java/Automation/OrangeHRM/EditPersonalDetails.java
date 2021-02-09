@@ -71,11 +71,14 @@ public class EditPersonalDetails {
 	
 	@Test(priority=3)
 	public void AddBloodGroup() throws InterruptedException{
-		JavascriptExecutor js = (JavascriptExecutor)baseClass.driver;
-		js.executeScript("arguments[0].scrollIntoView();",personalDetailPageObject.bloodGroup());
-		Thread.sleep(2000);
+		
+		//Scroll to blood group dropDown
+		JsExecutorScript js = new JsExecutorScript<>();
+		js.scrollView(personalDetailPageObject.bloodGroup());
+		
 		personalDetailPageObject.editSaveCustom().click();
 		dropDown.SelectDropDownOperations(personalDetailPageObject.bloodGroup(), "index", 1);
+		personalDetailPageObject.editSaveCustom().click();
 	}
 	
 }
