@@ -34,8 +34,8 @@ public class VerifyEmployeeList {
 		js.scrollView(employeeListPageObjects.btnAdd());
 		Thread.sleep(2000);
 		
-		List<WebElement> list =employeeListPageObjects.employeeList();
-		for (WebElement webElement : list) {
+		List<WebElement> employeeDetails =employeeListPageObjects.employeeTableDetails();
+		for (WebElement webElement : employeeDetails) {
 			if(!webElement.getText().isEmpty())
 				System.out.println(webElement.getText());
 		}

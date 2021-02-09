@@ -35,8 +35,11 @@ public class EmployeeListPO {
 	@FindBy(xpath="//select[@id='empsearch_sub_unit']")
 	WebElement empsearchSubUnit;
 	
-	@FindBy(xpath="//*[@id='resultTable']/tbody/tr/td")
+	@FindBy(xpath="//*[@id='resultTable']/tbody/tr")
 	List<WebElement> employeeList;
+	
+	@FindBy(xpath="//*[@id='resultTable']/tbody/tr/td")
+	List<WebElement> employeeTableDetails;
 	
 	@FindBy(xpath="//*[@id='searchBtn']")
 	WebElement search;
@@ -82,6 +85,10 @@ public class EmployeeListPO {
 		return employeeList;
 	}
 	
+	public List<WebElement> employeeTableDetails(){
+		return employeeTableDetails;
+	}
+	
 	public WebElement search(){
 		return search;
 	}
@@ -97,6 +104,7 @@ public class EmployeeListPO {
 	public WebElement btnDelete(){
 		return btnDelete;
 	}
+	
 	
 	
 }
