@@ -57,7 +57,7 @@ public class AddContactDetails {
 		contactDetailsPageObjects.contact_emp_oth_email().sendKeys("asdasda@adasd.cmmm");
 		
 		js.scrollView(contactDetailsPageObjects.contact_emp_work_email());
-		contactDetailsPageObjects.contact_emp_oth_email().sendKeys("dasdasda@bdasm.codasdas");
+		contactDetailsPageObjects.contact_emp_work_email().sendKeys("dasdasda@bdasm.codasdas");
 		
 		js.scrollView(contactDetailsPageObjects.btnSave());
 		contactDetailsPageObjects.btnSave().click();

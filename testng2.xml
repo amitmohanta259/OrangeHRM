@@ -15,6 +15,7 @@
       <class name="Automation.OrangeHRM.VerifyEmployeeList"/>
       <class name="Automation.OrangeHRM.AddContactDetails"/>
       <class name="Automation.OrangeHRM.Logout"/>
+      <class name="Automation.OrangeHRM.VerifyUserCredentials"/>
     </classes>
   </test> <!-- Test -->
   
