@@ -3,7 +3,9 @@ package Automation.OrangeHRM;
 import java.util.List;
 
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 
 import Automation.OrangeHRM.PageObject.EmployeeListPO;
@@ -14,6 +16,9 @@ public class VerifyEmployeeList {
 	NavigationPO navigationPageObjects;
 	EmployeeListPO employeeListPageObjects;
 	JsExecutorScript js;
+	List<WebElement> employeeList;
+	List<WebElement> employeeDetails;
+	
 	@Test(priority=1)
 	public void enterSearchDetails() throws InterruptedException{
 		navigationPageObjects = new NavigationPO(baseClass.driver);
@@ -34,10 +39,29 @@ public class VerifyEmployeeList {
 		js.scrollView(employeeListPageObjects.btnAdd());
 		Thread.sleep(2000);
 		
-		List<WebElement> employeeDetails =employeeListPageObjects.employeeTableDetails();
-		for (WebElement webElement : employeeDetails) {
+		
+	}
+	
+	@Test(priority=2)
+	public void searchList(){
+		employeeList =employeeListPageObjects.employeeList();
+		for (WebElement webElement : employeeList) {
 			if(!webElement.getText().isEmpty())
 				System.out.println(webElement.getText());
+			else{
+				throw new NoSuchElementException("No Element Found");
+			}
 		}
+	}
+	
+	@Test(priority=3)
+	public void clickToViewProfile(){
+		if (!employeeList.isEmpty() && employeeList.get(0).getText().contains("a k Singh")) {
+			employeeDetails =employeeListPageObjects.employeeTableDetails();
+			employeeDetails.get(1).click();
+		}else{
+			throw new NoSuchElementException("Element not found");
+		}
+		
 	}
 }
