@@ -1,5 +1,8 @@
 package Automation.OrangeHRM;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.apache.poi.ss.formula.functions.T;
 import org.openqa.selenium.JavascriptException;
 import org.openqa.selenium.JavascriptExecutor;
@@ -53,10 +56,11 @@ public class AddContactDetails {
 		js.scrollView(contactDetailsPageObjects.contact_emp_oth_email());
 		contactDetailsPageObjects.contact_emp_oth_email().sendKeys("asdasda@adasd.cmmm");
 		
-		js.scrollView(contactDetailsPageObjects.contact_emp_oth_email());
+		js.scrollView(contactDetailsPageObjects.contact_emp_work_email());
 		contactDetailsPageObjects.contact_emp_oth_email().sendKeys("dasdasda@bdasm.codasdas");
 		
 		js.scrollView(contactDetailsPageObjects.btnSave());
 		contactDetailsPageObjects.btnSave().click();
+		
 	}
 }
