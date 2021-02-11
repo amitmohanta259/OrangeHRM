@@ -12,7 +12,7 @@ public class LoginPO {
 	By password = By.xpath("//input[@id='txtPassword']");
 	By loginBtn = By.xpath("//input[@id='btnLogin']");
 	By forgetPassword = By.xpath("//input[text(),'Forgot your password?']");
-	
+	By errorMsg = By.xpath("//*[@id='spanMessage']");
 	public LoginPO(WebDriver driver){
 		this.driver = driver;
 	}
@@ -31,6 +31,10 @@ public class LoginPO {
 	
 	public WebElement forgetPassword(){
 		return driver.findElement(forgetPassword);
+	}
+	
+	public WebElement errorMsg(){
+		return driver.findElement(errorMsg);
 	}
 
 	
