@@ -37,7 +37,7 @@ class SafariMacCatalina implements Runnable
 }
 public class ParallelmultiBrowser {
   public static final String USERNAME = "thunderstorm3";
-  public static final String AUTOMATE_KEY = "sBLy8p6KRpJABJF8H9X8";
+  public static final String AUTOMATE_KEY = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";
   public static final String URL = "https://" + USERNAME + ":" + AUTOMATE_KEY + "@hub-cloud.browserstack.com/wd/hub";
   public static void main(String[] args) throws Exception {
 	  Thread object1 = new Thread(new ChromeLatestWin10());
