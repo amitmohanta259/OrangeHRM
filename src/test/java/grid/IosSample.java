@@ -11,7 +11,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import java.net.URL;
 public class IosSample {
 public static final String AUTOMATE_USERNAME = "thunderstorm3";
-public static final String AUTOMATE_ACCESS_KEY = "sBLy8p6KRpJABJF8H9X8";
+public static final String AUTOMATE_ACCESS_KEY = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";
 public static final String URL = "https://" + AUTOMATE_USERNAME + ":" + AUTOMATE_ACCESS_KEY + "@hub-cloud.browserstack.com/wd/hub";
 public static void main(String[] args) throws Exception {
  DesiredCapabilities caps = new DesiredCapabilities();
