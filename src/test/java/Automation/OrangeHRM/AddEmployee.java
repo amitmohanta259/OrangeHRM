@@ -3,6 +3,7 @@ package Automation.OrangeHRM;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import Automation.OrangeHRM.PageObject.AddEmployeePO;
@@ -61,5 +62,14 @@ public class AddEmployee {
 		}
 	}
 	
-	
+	@DataProvider
+	public void getUserData(){
+		Object[][] data = new Object[1][5];
+		data[0][0] = "a";
+		data[0][1] = "k";
+		data[0][2] = "singh";
+		data[0][3] = "aksingh";
+		data[0][4] = "password";
+		
+	}
 }
